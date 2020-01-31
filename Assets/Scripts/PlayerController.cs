@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
-    public float force = 100f;
+    [SerializeField] private float speed = 3f;
+    public float force = 2000f;
 
     private Rigidbody2D playerRb;
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if (playerRb.velocity.magnitude < speed) {
+        if (Mathf.Abs(playerRb.velocity.x) < speed) {
             playerRb.AddForce(Vector2.right * horizontalInput * force, ForceMode2D.Force);
         }
 
