@@ -15,6 +15,7 @@ public class followPlayer : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        //Make a target position on the player or on the edge of the map
         Vector3 targetPosition = Vector3.zero;
         if (target.position.x > leftBoundary && target.position.x < rightBoundary)
         {
@@ -28,6 +29,8 @@ public class followPlayer : MonoBehaviour
         {
             targetPosition = new Vector3(rightBoundary, 0, -10);
         }
+
+        //Do a smooth transition to go to the target
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }
 }

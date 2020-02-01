@@ -16,6 +16,7 @@ public class chaiseSoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Arret ou reprise du son quand on est immobile ou en mouvement
         if (rb.velocity.magnitude > 0.1f)
         {
             if (!source.isPlaying)
