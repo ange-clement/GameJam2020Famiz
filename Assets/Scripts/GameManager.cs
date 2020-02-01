@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     private float startTimeDown;
     private float interCommandDelay = 1f;
     private float holdOnDelay = 1f;
+    private float pickupTime = 2f;
+
+    private bool isInQTS = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFixing)
+        if (isInQTS)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -54,8 +57,14 @@ public class GameManager : MonoBehaviour
 
     public void FixSequence1()
     {
-        Debug.Log("début");
         isFixing = true;
+        StartCoroutine(BeginFix1());
+    }
+
+    IEnumerator BeginFix1()
+    {
+        yield return new WaitForSeconds(pickupTime);
+        Debug.Log("début");
         FixGraphicObjects1[0].SetActive(true);
         idImage = 1;
         StartCoroutine(ShowCurrentImage());
@@ -64,10 +73,10 @@ public class GameManager : MonoBehaviour
     IEnumerator ShowCurrentImage()
     {
         yield return new WaitForSeconds(interCommandDelay);
+        isInQTS = true;
         Debug.Log("next");
         haveToPress = true;
         FixGraphicObjects1[idImage].SetActive(true);
-
     }
 
     void EndFixSequence()
@@ -78,6 +87,7 @@ public class GameManager : MonoBehaviour
             fixImage.SetActive(false);
         }
         isFixing = false;
+        isInQTS = false;
         SceneManager.LoadScene(enigmeScene1);
     }
 }

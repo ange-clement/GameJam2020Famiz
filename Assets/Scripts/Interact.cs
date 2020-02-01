@@ -6,6 +6,9 @@ public class Interact : MonoBehaviour
 {
     public GameManager gameManager;
 
+    public AudioSource VFXSource;
+    public AudioClip pickUpSound;
+
     private bool canMount = false;
     private Vector2 wantedPos;
     private float mountForce = 350f;
@@ -31,6 +34,10 @@ public class Interact : MonoBehaviour
                 canFix = false;
                 if (idFix == 1)
                 {
+                    playerRb.velocity = Vector2.zero;
+
+                    VFXSource.PlayOneShot(pickUpSound);
+
                     gameManager.FixSequence1();
                 }
             }
