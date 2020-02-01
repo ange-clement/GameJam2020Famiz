@@ -39,6 +39,9 @@ namespace Fungus
         [Tooltip("List of beeps to randomly select when playing beep sound effects. Will play maximum of one beep per character, with only one beep playing at a time.")]
         [SerializeField] protected List<AudioClip> beepSounds = new List<AudioClip>();
 
+        [Tooltip("Test")]
+        [SerializeField] protected AudioClip[] soundEffects;
+
         [Tooltip("Long playing sound effect to play when writing text")]
         [SerializeField] protected AudioClip soundEffect;
 
@@ -91,8 +94,15 @@ namespace Fungus
             targetAudioSource.volume = 0f;
         }
 
+        void RandomiseEffect()
+        {
+            int randomId = Random.Range(0, soundEffects.Length);
+            soundEffect = soundEffects[randomId];
+        }
+
         protected virtual void Play(AudioClip audioClip)
         {
+            RandomiseEffect();
             if (targetAudioSource == null ||
                 (audioMode == AudioMode.SoundEffect && soundEffect == null && audioClip == null) ||
                 (audioMode == AudioMode.Beeps && beepSounds.Count == 0))
@@ -116,6 +126,7 @@ namespace Fungus
             {
                 // Use sound effects defined in WriterAudio
                 targetAudioSource.clip = soundEffect;
+                StartCoroutine(Trucage());
                 targetAudioSource.loop = loop;
                 targetAudioSource.Play();
             }
@@ -125,6 +136,15 @@ namespace Fungus
                 targetAudioSource.clip = null;
                 targetAudioSource.loop = false;
                 playBeeps = true;
+            }
+        }
+
+        IEnumerator<WaitForSecond> Trucage()
+        {
+            while (targetAudioSource.isPlaying)
+            {
+                yield return new WaitForSeconds(.2f);
+                RandomiseEffect();
             }
         }
 
