@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  VFXSource: {fileID: 0}
+  feedBackClips: []
 --- !u!82 &6326773470197343634
 AudioSource:
   m_ObjectHideFlags: 0

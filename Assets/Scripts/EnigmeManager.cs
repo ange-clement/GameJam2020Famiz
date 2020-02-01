@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EnigmeManager : MonoBehaviour
 {
-    public GameObject squareEnigme;
-    public GameObject triangleEnigme;
+    public GameObject[] enigmes;
     public string nextScene;
+
+    public AudioSource VFXSource;
+    public AudioClip[] feedBackClips;
 
     private int status = 0;
     // Start is called before the first frame update
@@ -24,16 +26,23 @@ public class EnigmeManager : MonoBehaviour
 
     public void next()
     {
-        if (status == 0)
+        enigmes[status].GetComponentInChildren<DragableObject>().isDragable = false;
+        if (status < enigmes.Length-1)
         {
-            squareEnigme.GetComponentInChildren<DragableObject>().isDragable = false;
-            triangleEnigme.SetActive(true);
+            enigmes[status + 1].SetActive(true);
         }
-        else if (status == 1)
+        else
         {
-            triangleEnigme.GetComponentInChildren<DragableObject>().isDragable = false;
-            SceneManager.LoadScene(nextScene);
+            Debug.Log("FIN");
         }
+
+        VFXSource.PlayOneShot(feedBackClips[status]);
+
         status++;
+    }
+
+    void End()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 }
