@@ -39,6 +39,7 @@ public class Interact : MonoBehaviour
                 canMount = false;
                 Vector2 dir = (wantedPos - new Vector2(transform.position.x, transform.position.y));
                 dir.Normalize();
+                playerRb.velocity = Vector2.zero;
                 playerRb.AddForce(dir * mountForce, ForceMode2D.Impulse);
             }
         }
