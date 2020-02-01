@@ -11,6 +11,8 @@ public class EnigmeManager : MonoBehaviour
     public AudioSource VFXSource;
     public AudioClip[] feedBackClips;
 
+    public int idEnigme = 0;
+
     private int status = 0;
 
     public void next()
@@ -27,16 +29,28 @@ public class EnigmeManager : MonoBehaviour
             {
                 spinObject.isDragable = false;
             }
+            else
+            {
+                PorteEnigme enigmeObject = enigmes[status].GetComponentInChildren<PorteEnigme>();
+                if (enigmeObject != null)
+                {
+                    enigmeObject.isDragable = false;
+                }
+            }
         }
 
 
         if (status < enigmes.Length-1)
         {
             enigmes[status + 1].SetActive(true);
+            if (idEnigme == 1 && status == 1)
+            {
+                enigmes[0].SetActive(false);
+            }
         }
         else
         {
-            //End();
+            End();
         }
 
         VFXSource.PlayOneShot(feedBackClips[status]);
