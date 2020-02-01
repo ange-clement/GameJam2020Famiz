@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public bool isFixing = false;
     public GameObject[] FixGraphicObjects1;
+    public string enigmeScene1;
 
     private int idImage = 0;
     private bool haveToPress = false;
@@ -76,5 +78,6 @@ public class GameManager : MonoBehaviour
             fixImage.SetActive(false);
         }
         isFixing = false;
+        SceneManager.LoadScene(enigmeScene1);
     }
 }

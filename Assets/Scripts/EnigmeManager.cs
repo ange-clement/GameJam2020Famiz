@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnigmeManager : MonoBehaviour
 {
     public GameObject squareEnigme;
     public GameObject triangleEnigme;
+    public string nextScene;
 
     private int status = 0;
     // Start is called before the first frame update
@@ -31,6 +33,7 @@ public class EnigmeManager : MonoBehaviour
         {
             triangleEnigme.GetComponentInChildren<DragableObject>().isDragable = false;
             Debug.Log("FIN ENIGME"); //TODO
+            SceneManager.LoadScene(nextScene);
         }
         status++;
     }
