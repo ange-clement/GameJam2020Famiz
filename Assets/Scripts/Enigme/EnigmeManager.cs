@@ -26,18 +26,31 @@ public class EnigmeManager : MonoBehaviour
 
     public void next()
     {
-        enigmes[status].GetComponentInChildren<DragableObject>().isDragable = false;
+        DragableObject dragableObject = enigmes[status].GetComponentInChildren<DragableObject>();
+        if (dragableObject != null)
+        {
+            dragableObject.isDragable = false;
+        }
+        else
+        {
+            SpinObject spinObject = enigmes[status].GetComponentInChildren<SpinObject>();
+            if (spinObject != null)
+            {
+                spinObject.isDragable = false;
+            }
+        }
+
+
         if (status < enigmes.Length-1)
         {
             enigmes[status + 1].SetActive(true);
         }
         else
         {
-            Debug.Log("FIN");
+            End();
         }
 
         VFXSource.PlayOneShot(feedBackClips[status]);
-
         status++;
     }
 

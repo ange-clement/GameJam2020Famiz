@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class SpinObject : MonoBehaviour
 {
-    public float angle = 180f;
+    public float length = 20f;
+    public float angle = -360f;
     [HideInInspector] public bool isDragable = true;
 
     private Rigidbody2D objectRb;
     private EnigmeManager enigmeManager;
+    private BoxCollider2D collider;
+    private Vector2 originalSize;
 
     private bool followCursor = false;
+    private float initProgress = 0f;
+    private float progress = 0f;
     // Start is called before the first frame update
     void Start()
     {
         enigmeManager = GameObject.Find("EnigmeManager").GetComponent<EnigmeManager>();
         objectRb = GetComponent<Rigidbody2D>();
+        collider = GetComponent<BoxCollider2D>();
+        originalSize = collider.size;
     }
 
     // Update is called once per frame
@@ -24,29 +31,35 @@ public class SpinObject : MonoBehaviour
         if (followCursor)
         {
             Vector3 mousePos = Input.mousePosition;
-            Vector3 wantedPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10));
+            Vector3 plannedPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10));
 
-            transform.LookAt(wantedPos, Vector3.forward);
+            progress = initProgress + plannedPos.x / length;
+            transform.rotation = Quaternion.Euler(0, 0, progress * angle);
 
-            if (transform.rotation.eulerAngles.z > angle)
+            if (Mathf.Abs(progress) >= 1f)
             {
-                //enigmeManager.next();
+                followCursor = false;
+                initProgress = progress;
+                collider.size = originalSize;
+                transform.rotation = Quaternion.Euler(0, 0, angle);
+
+                enigmeManager.next();
             }
         }
     }
 
     private void OnMouseDown()
     {
-        if (isDragable)
+        if (!followCursor && isDragable)
         {
-            if (!followCursor)
-            {
-                followCursor = true;
-            }
-            else
-            {
-                followCursor = false;
-            }
+            followCursor = true;
+            collider.size = new Vector2(100, 100);
+        }
+        else
+        {
+            followCursor = false;
+            initProgress = progress;
+            collider.size = originalSize;
         }
     }
 }
