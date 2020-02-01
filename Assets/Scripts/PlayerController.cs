@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip[] walkSounds;
     public AudioSource foleySource;
     public AudioClip[] foleySounds;
+    public Animator animator;
     private bool playWalkSound = false;
     private float playTime = .5f;
     private float playTimer = 0f;
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
                 playerRb.AddForce(Vector2.right * horizontalInput * force, ForceMode2D.Force);
             }
 
-            if (horizontalInput == 0 && Mathf.Abs(playerRb.velocity.y) < 0.1f)
+            if (horizontalInput == 0 && Mathf.Abs(playerRb.velocity.y) < 0.01f)
             {
                 playerRb.drag = 10f;
             }
@@ -47,7 +48,7 @@ public class PlayerController : MonoBehaviour
                 playerRb.drag = 0f;
             }
 
-            if (Mathf.Abs(playerRb.velocity.x)<0.1f || Mathf.Abs(playerRb.velocity.y)>0.1f)
+            if (Mathf.Abs(playerRb.velocity.x)<0.01f || Mathf.Abs(playerRb.velocity.y)>0.01f)
             {
                 if (playWalkSound)
                 {
@@ -58,13 +59,23 @@ public class PlayerController : MonoBehaviour
                 {
                     walkParticle.Stop();
                 }
+                if (animator.GetBool("mooving_b")) {
+                    animator.SetBool("mooving_b", false);
+                    Debug.Log(playerRb.velocity.x);
+                }
+
             }
-            else if (Mathf.Abs(playerRb.velocity.x) > 0.1f)
+            else if (Mathf.Abs(playerRb.velocity.x) > 0.01f)
             {
                 playWalkSound = true;
                 if (!walkParticle.isPlaying)
                 {
                     walkParticle.Play();
+                }
+                if (!animator.GetBool("mooving_b"))
+                {
+                    animator.SetBool("mooving_b", true);
+                    Debug.Log(playerRb.velocity.x);
                 }
             }
         }
