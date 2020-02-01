@@ -255,6 +255,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: db2961a7d1c69d743b9eb2ee76cce862, type: 3}
   - {fileID: 8300000, guid: 507b658ac416edd40a2b9322c4dfb969, type: 3}
   idEnigme: 0
+  endTime: 2
 --- !u!4 &416343071
 Transform:
   m_ObjectHideFlags: 0
@@ -465,6 +466,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1314121491}
     m_Modifications:
+    - target: {fileID: 4866638093150549496, guid: 3804142c7c9916d48a94c88a02cb6916,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6376210061600700724, guid: 3804142c7c9916d48a94c88a02cb6916,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -916,6 +922,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3879703629952695404, guid: 6c6a402bf8e78674e80621a66b4c7132,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c6a402bf8e78674e80621a66b4c7132, type: 3}
 --- !u!1001 &6290623237770890826
@@ -984,6 +995,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977511512693927914, guid: 446ee3b71e3ce57448ad954806be4b7f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446ee3b71e3ce57448ad954806be4b7f, type: 3}
