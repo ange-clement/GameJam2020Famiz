@@ -26,6 +26,10 @@ public class ShowAlpha : MonoBehaviour
                 currentAlpha += speed * Time.deltaTime;
                 titleText.alpha = currentAlpha;
             }
+            else
+            {
+                Application.Quit();
+            }
         }
     }
 }

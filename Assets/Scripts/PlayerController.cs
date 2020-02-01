@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private float playTime = .5f;
     private float playTimer = 0f;
 
+    public ParticleSystem walkParticle;
+
     private Rigidbody2D playerRb;
     private GameManager gameManager;
     // Start is called before the first frame update
@@ -50,10 +52,18 @@ public class PlayerController : MonoBehaviour
                     playWalkSound = false;
                     walkSource.Stop();
                 }
+                if (walkParticle.isPlaying)
+                {
+                    walkParticle.Stop();
+                }
             }
             else if (Mathf.Abs(playerRb.velocity.x) > 0.1f)
             {
                 playWalkSound = true;
+                if (!walkParticle.isPlaying)
+                {
+                    walkParticle.Play();
+                }
             }
         }
         else
@@ -62,6 +72,10 @@ public class PlayerController : MonoBehaviour
             {
                 walkSource.Stop();
                 playWalkSound = false;
+            }
+            if (walkParticle.isPlaying)
+            {
+                walkParticle.Stop();
             }
         }
 
