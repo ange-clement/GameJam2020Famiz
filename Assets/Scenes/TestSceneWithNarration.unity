@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &193749194 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8294266, guid: 8a005a9e0713f4cc1b5ad29fb07657d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1821236116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &247972044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,6 +1392,10 @@ PrefabInstance:
       propertyPath: soundEffects.Array.data[5]
       value: 
       objectReference: {fileID: 8300000, guid: 509479f208cf9714e87ea220d9eaa848, type: 3}
+    - target: {fileID: 11404316, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: targetAudioSource
+      value: 
+      objectReference: {fileID: 193749194}
     - target: {fileID: 11488896, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_Color.r
       value: 1

@@ -1,7 +1,7 @@
 // This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
-
-﻿using UnityEngine;
+using System.Collections;
+using UnityEngine;
 using System.Collections.Generic;
 
 namespace Fungus
@@ -103,6 +103,7 @@ namespace Fungus
         protected virtual void Play(AudioClip audioClip)
         {
             RandomiseEffect();
+            StartCoroutine(Trucage());
             if (targetAudioSource == null ||
                 (audioMode == AudioMode.SoundEffect && soundEffect == null && audioClip == null) ||
                 (audioMode == AudioMode.Beeps && beepSounds.Count == 0))
@@ -126,7 +127,6 @@ namespace Fungus
             {
                 // Use sound effects defined in WriterAudio
                 targetAudioSource.clip = soundEffect;
-                StartCoroutine(Trucage());
                 targetAudioSource.loop = loop;
                 targetAudioSource.Play();
             }
@@ -139,12 +139,12 @@ namespace Fungus
             }
         }
 
-        IEnumerator<WaitForSecond> Trucage()
+        IEnumerator Trucage()
         {
-            while (targetAudioSource.isPlaying)
+            while (true)
             {
-                yield return new WaitForSeconds(.2f);
-                RandomiseEffect();
+                yield return new WaitForSeconds(.4f);
+                targetAudioSource.pitch = Random.Range(.9f, 1.1f);
             }
         }
 
