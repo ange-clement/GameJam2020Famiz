@@ -32,7 +32,10 @@ public class SpinObject : MonoBehaviour
     IEnumerator ShowHelper()
     {
         yield return new WaitForSeconds(helperTime);
-        helper.SetActive(true);
+        if (isDragable)
+        {
+            helper.SetActive(true);
+        }
     }
 
     void DisableHelpers()

@@ -38,15 +38,18 @@ public class DragableObject : MonoBehaviour
     IEnumerator ShowHelper()
     {
         yield return new WaitForSeconds(helperTime);
-        if (followCursor)
+        if (isDragable)
         {
-            helpers[0].SetActive(false);
-            helpers[1].SetActive(true);
-        }
-        else
-        {
-            helpers[0].SetActive(true);
-            helpers[1].SetActive(false);
+            if (followCursor)
+            {
+                helpers[0].SetActive(false);
+                helpers[1].SetActive(true);
+            }
+            else
+            {
+                helpers[0].SetActive(true);
+                helpers[1].SetActive(false);
+            }
         }
     }
 
@@ -76,6 +79,10 @@ public class DragableObject : MonoBehaviour
                     helpers[0].SetActive(false);
                     helpers[1].SetActive(false);
                     enigmeManager.next();
+                }
+                else
+                {
+                    DisableHelpers();
                 }
             }
         }
