@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("début");
         isFixing = true;
         FixGraphicObjects1[0].SetActive(true);
-        idImage++;
+        idImage = 1;
         StartCoroutine(ShowCurrentImage());
     }
 

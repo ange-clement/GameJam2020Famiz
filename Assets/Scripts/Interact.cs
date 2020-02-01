@@ -8,8 +8,8 @@ public class Interact : MonoBehaviour
 
     private bool canMount = false;
     private Vector2 wantedPos;
-    private float mountForce = 320f;
-    private Vector3 moutOffset = new Vector3(0, 3);
+    private float mountForce = 350f;
+    private Vector3 moutOffset = new Vector3(0, 3.5f);
 
     private bool canFix = false;
     private int idFix;
