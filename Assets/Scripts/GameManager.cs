@@ -57,7 +57,13 @@ public class GameManager : MonoBehaviour
     public void FixSequence1()
     {
         isFixing = true;
-        StartCoroutine(BeginFix1());
+        StartCoroutine(NextScene());
+    }
+
+    IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(pickupTime);
+        SceneManager.LoadScene(enigmeScene1);
     }
 
     IEnumerator BeginFix1()
