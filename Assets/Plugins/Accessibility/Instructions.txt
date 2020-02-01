@@ -1,0 +1,28 @@
+Accessibility Assessment Tool Instructions.
+
+This tool (made at Unity Hackweek 2019) takes all the Accessibility goals from the website http://gameaccessibilityguidelines.com/ and puts them into an easy to use tool inside Unity. A lot of the goals are simple to impliment and will make a large impact on gamers with accessibilty needs. You can start on the basic goals, and work through them, into the intermediate and finally advanced, and this tool will track your progress.
+
+Initial Setup:
+
+1. Ensure the package has imported to the Assets/Plugins/Accessibility path
+2. In the Unity title bar, select Accessibility and then Create Accessibility Data
+3. Then again, select Accessibility and then Open Accessibility Window
+
+How To Use:
+
+1. Open the Accessibility Window (this can be docked anywhere)
+2. Open the task you are interested in tracking
+3. To mark as complete, simply tick the completed tickbox, this will update your stats.
+4. If any goal is not relevant to your game, simply tick the "Not relevant for this game tickbox" and your tracking stats will update.
+
+Resetting the Data:
+
+1. Simply select Reset Accessibility Data from the Accessibility Menu
+
+Adding new Accessibility Goals:
+
+1. Simple edit the data.json file and add new entries into the data, be sure to follow the format of the file, otherwise data corruption will occur and the file will not load into Unity.
+
+Help and Support:
+
+You can reach out to me on twitter at @epicnerdrage if you need any help

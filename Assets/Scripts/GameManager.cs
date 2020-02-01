@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
             if (startTimeDown != 0f && startTimeDown + holdOnDelay < Time.time)
             {
                 Debug.Log("End F");
+                startTimeDown = 0f;
+
                 FixGraphicObjects1[idImage].SetActive(false);
                 idImage++;
                 FixGraphicObjects1[0].SetActive(false);

@@ -1179,16 +1179,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1814755354184210111, guid: eeab12f40876b5a41af4e3f954c893ae,
         type: 3}
-      propertyPath: FixGraphicObjects1.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1814755354184210111, guid: eeab12f40876b5a41af4e3f954c893ae,
-        type: 3}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 1039848517}
-    - target: {fileID: 1814755354184210111, guid: eeab12f40876b5a41af4e3f954c893ae,
-        type: 3}
       propertyPath: FixGraphicObjects1.Array.data[0]
       value: 
       objectReference: {fileID: 380350017}
@@ -1290,6 +1280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 3248550682232184922, guid: 23f8315f6c2122e438ecce32742febd8,
+        type: 3}
+      propertyPath: m_Mass
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3248550682232184923, guid: 23f8315f6c2122e438ecce32742febd8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1345,6 +1340,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3248550682232184925, guid: 23f8315f6c2122e438ecce32742febd8,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: d82738a781db1204ca107930409359a7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f8315f6c2122e438ecce32742febd8, type: 3}
 --- !u!1001 &6662443476930451920

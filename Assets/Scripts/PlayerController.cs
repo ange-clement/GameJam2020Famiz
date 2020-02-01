@@ -5,7 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
-    public float force = 2000f;
+    private float force = 2000f;
+
+    public AudioSource walkSource;
+    public AudioClip[] walkSounds;
+    private bool playWalkSound = false;
+    private float playTime = .5f;
+    private float playTimer = 0f;
 
     private Rigidbody2D playerRb;
     private GameManager gameManager;
@@ -36,6 +42,37 @@ public class PlayerController : MonoBehaviour
             {
                 playerRb.drag = 0f;
             }
+
+            if (Mathf.Abs(playerRb.velocity.x)<0.1f || Mathf.Abs(playerRb.velocity.y)>0.1f)
+            {
+                if (playWalkSound)
+                {
+                    playWalkSound = false;
+                    walkSource.Stop();
+                }
+            }
+            else if (Mathf.Abs(playerRb.velocity.x) > 0.1f)
+            {
+                playWalkSound = true;
+            }
+        }
+        else
+        {
+            if (walkSource.isPlaying)
+            {
+                walkSource.Stop();
+                playWalkSound = false;
+            }
+        }
+
+        if (playWalkSound && !walkSource.isPlaying && playTimer + playTime < Time.time)
+        {
+            playTimer = Time.time;
+
+            int randomClipId = Random.Range(0, walkSounds.Length);
+            walkSource.clip = walkSounds[randomClipId];
+
+            walkSource.Play();
         }
     }
 }
