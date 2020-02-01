@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   squareEnigme: {fileID: 924430443}
   triangleEnigme: {fileID: 817922336}
-  nextScene: Menu
+  nextScene: Credit
 --- !u!4 &416343071
 Transform:
   m_ObjectHideFlags: 0

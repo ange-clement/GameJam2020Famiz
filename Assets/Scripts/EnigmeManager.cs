@@ -32,7 +32,6 @@ public class EnigmeManager : MonoBehaviour
         else if (status == 1)
         {
             triangleEnigme.GetComponentInChildren<DragableObject>().isDragable = false;
-            Debug.Log("FIN ENIGME"); //TODO
             SceneManager.LoadScene(nextScene);
         }
         status++;

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnigmeTest.unity
     guid: e9c30962cd05c5046ad697acd989c7a8
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 40e9cf92b8aa2c94aad1f6c2b81f4eea
   m_configObjects: {}
