@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource foleySource;
     public AudioClip[] foleySounds;
     public Animator animator;
+    
     private bool playWalkSound = false;
     private float playTime = .5f;
     private float playTimer = 0f;
@@ -20,11 +21,15 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D playerRb;
     private GameManager gameManager;
+    private SpriteRenderer sprite;
+
+    private bool lookRight = true;
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         gameManager = GetComponent<Interact>().gameManager;
+        sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -48,6 +53,17 @@ public class PlayerController : MonoBehaviour
                 playerRb.drag = 0f;
             }
 
+            if (horizontalInput < 0 && lookRight)
+            {
+                lookRight = false;
+                sprite.flipX = true;
+
+            } else if (horizontalInput > 0 && !lookRight)
+            {
+                lookRight = true;
+                sprite.flipX = false;
+            }
+
             if (Mathf.Abs(playerRb.velocity.x)<0.01f || Mathf.Abs(playerRb.velocity.y)>0.01f)
             {
                 if (playWalkSound)
@@ -59,11 +75,9 @@ public class PlayerController : MonoBehaviour
                 {
                     walkParticle.Stop();
                 }
-                if (animator.GetBool("mooving_b")) {
+                if (animator.GetBool("mooving_b") ) {
                     animator.SetBool("mooving_b", false);
-                    Debug.Log(playerRb.velocity.x);
                 }
-
             }
             else if (Mathf.Abs(playerRb.velocity.x) > 0.01f)
             {
@@ -75,7 +89,6 @@ public class PlayerController : MonoBehaviour
                 if (!animator.GetBool("mooving_b"))
                 {
                     animator.SetBool("mooving_b", true);
-                    Debug.Log(playerRb.velocity.x);
                 }
             }
         }
