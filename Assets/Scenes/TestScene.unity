@@ -1610,25 +1610,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2229315052665796164, guid: 460fcb69379e4be4294953681d1f5401,
+    - target: {fileID: 2229315052665796165, guid: 460fcb69379e4be4294953681d1f5401,
         type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229315052665796164, guid: 460fcb69379e4be4294953681d1f5401,
-        type: 3}
-      propertyPath: leftBoundary
-      value: -19.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229315052665796164, guid: 460fcb69379e4be4294953681d1f5401,
-        type: 3}
-      propertyPath: rightBoundary
-      value: 19.5
+      propertyPath: m_Size.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2229315052665796167, guid: 460fcb69379e4be4294953681d1f5401,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229315053680793977, guid: 460fcb69379e4be4294953681d1f5401,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229315053911493119, guid: 460fcb69379e4be4294953681d1f5401,
+        type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229315053911493119, guid: 460fcb69379e4be4294953681d1f5401,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229315053911493119, guid: 460fcb69379e4be4294953681d1f5401,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229315053911493119, guid: 460fcb69379e4be4294953681d1f5401,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229315053911493119, guid: 460fcb69379e4be4294953681d1f5401,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460fcb69379e4be4294953681d1f5401, type: 3}
