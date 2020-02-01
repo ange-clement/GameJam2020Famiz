@@ -102,8 +102,8 @@ namespace Fungus
 
         protected virtual void Play(AudioClip audioClip)
         {
-            RandomiseEffect();
-            StartCoroutine(Trucage());
+            //RandomiseEffect();
+           // StartCoroutine(Trucage());
             if (targetAudioSource == null ||
                 (audioMode == AudioMode.SoundEffect && soundEffect == null && audioClip == null) ||
                 (audioMode == AudioMode.Beeps && beepSounds.Count == 0))

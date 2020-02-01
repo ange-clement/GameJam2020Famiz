@@ -1108,7 +1108,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1209006326}
   selectedCommands:
-  - {fileID: 1209006328}
+  - {fileID: 1209006325}
   variables: []
   description: 
   stepPause: 0
@@ -1358,7 +1358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11404316, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: soundEffects.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11404316, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: audioMode
@@ -1371,7 +1371,7 @@ PrefabInstance:
     - target: {fileID: 11404316, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: soundEffects.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 0aa5672cd89553c439515a625d3ad764, type: 3}
+      objectReference: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
     - target: {fileID: 11404316, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: soundEffects.Array.data[1]
       value: 
