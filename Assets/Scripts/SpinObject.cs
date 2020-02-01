@@ -7,6 +7,8 @@ public class SpinObject : MonoBehaviour
     public float length = 20f;
     public float angle = -360f;
     [HideInInspector] public bool isDragable = true;
+    public float helperTime = 3f;
+    public GameObject helper;
 
     private Rigidbody2D objectRb;
     private EnigmeManager enigmeManager;
@@ -23,6 +25,20 @@ public class SpinObject : MonoBehaviour
         objectRb = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
         originalSize = collider.size;
+
+        StartCoroutine(ShowHelper());
+    }
+
+    IEnumerator ShowHelper()
+    {
+        yield return new WaitForSeconds(helperTime);
+        helper.SetActive(true);
+    }
+
+    void DisableHelpers()
+    {
+        helper.SetActive(false);
+        StartCoroutine(ShowHelper());
     }
 
     // Update is called once per frame
@@ -43,6 +59,8 @@ public class SpinObject : MonoBehaviour
                 collider.size = originalSize;
                 transform.rotation = Quaternion.Euler(0, 0, angle);
 
+                helper.SetActive(false);
+
                 enigmeManager.next();
             }
         }
@@ -54,6 +72,8 @@ public class SpinObject : MonoBehaviour
         {
             followCursor = true;
             collider.size = new Vector2(100, 100);
+
+            DisableHelpers();
         }
         else
         {

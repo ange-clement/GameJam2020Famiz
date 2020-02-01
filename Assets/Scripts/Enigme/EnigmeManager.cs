@@ -12,17 +12,6 @@ public class EnigmeManager : MonoBehaviour
     public AudioClip[] feedBackClips;
 
     private int status = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void next()
     {
@@ -47,7 +36,7 @@ public class EnigmeManager : MonoBehaviour
         }
         else
         {
-            End();
+            //End();
         }
 
         VFXSource.PlayOneShot(feedBackClips[status]);

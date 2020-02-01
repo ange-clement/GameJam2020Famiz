@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2940a999a2d2c1343b2219d9918bc1a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 20
+  length: 10
   angle: -360
   isDragable: 1
 --- !u!61 &2302484640373280435

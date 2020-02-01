@@ -6,6 +6,8 @@ public class DragableObject : MonoBehaviour
 {
     public Collider2D targetCollider;
     [HideInInspector] public bool isDragable = true;
+    public float helperTime = 3f;
+    public GameObject[] helpers;
 
     private Vector3 initPos;
     private Rigidbody2D objectRb;
@@ -18,6 +20,8 @@ public class DragableObject : MonoBehaviour
         enigmeManager = GameObject.Find("EnigmeManager").GetComponent<EnigmeManager>();
         initPos = transform.position;
         objectRb = GetComponent<Rigidbody2D>();
+
+        StartCoroutine(ShowHelper());
     }
 
     // Update is called once per frame
@@ -31,6 +35,28 @@ public class DragableObject : MonoBehaviour
         }
     }
 
+    IEnumerator ShowHelper()
+    {
+        yield return new WaitForSeconds(helperTime);
+        if (followCursor)
+        {
+            helpers[0].SetActive(false);
+            helpers[1].SetActive(true);
+        }
+        else
+        {
+            helpers[0].SetActive(true);
+            helpers[1].SetActive(false);
+        }
+    }
+
+    void DisableHelpers()
+    {
+        helpers[0].SetActive(false);
+        helpers[1].SetActive(false);
+        StartCoroutine(ShowHelper());
+    }
+
     private void OnMouseDown()
     {
         if (isDragable)
@@ -38,6 +64,8 @@ public class DragableObject : MonoBehaviour
             if (!followCursor)
             {
                 followCursor = true;
+
+                DisableHelpers();
             }
             else
             {
@@ -45,6 +73,8 @@ public class DragableObject : MonoBehaviour
 
                 if (objectRb.IsTouching(targetCollider))
                 {
+                    helpers[0].SetActive(false);
+                    helpers[1].SetActive(false);
                     enigmeManager.next();
                 }
             }
