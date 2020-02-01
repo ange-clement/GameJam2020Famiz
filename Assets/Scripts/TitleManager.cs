@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class TitleManager : MonoBehaviour
 {
     public string playSceneName;
-    public float fadeOutTime = 3f;
+    public float fadeOutTime = 2f;
+    private float alphaSpeed = .8f;
     public TextMeshProUGUI[] texts;
     public Image[] images;
 
@@ -17,12 +18,7 @@ public class TitleManager : MonoBehaviour
 
     private bool isFading = false;
     private float alpha = 1f;
-    private float alphaSpeed;
 
-    private void Start()
-    {
-        alphaSpeed = fadeOutTime / 8f;
-    }
 
     private void Update()
     {
