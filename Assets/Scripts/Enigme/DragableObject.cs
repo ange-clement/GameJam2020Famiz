@@ -83,6 +83,7 @@ public class DragableObject : MonoBehaviour
                 else
                 {
                     DisableHelpers();
+                    enigmeManager.fail();
                 }
             }
         }

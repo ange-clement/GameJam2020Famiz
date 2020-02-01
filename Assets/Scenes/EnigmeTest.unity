@@ -157,10 +157,17 @@ MonoBehaviour:
   - {fileID: 5834734988166127979}
   nextScene: Credit
   VFXSource: {fileID: 416343072}
-  feedBackClips:
-  - {fileID: 8300000, guid: cbab4a6455f71ed45897f1ae4aa49307, type: 3}
-  - {fileID: 8300000, guid: fc911598849173d4da344955700767f5, type: 3}
-  - {fileID: 8300000, guid: 3b4f6d345f421d9408641ae17ba83f5c, type: 3}
+  successClips:
+  - {fileID: 8300000, guid: 157e4e3ea00ca0144be544896bf71cad, type: 3}
+  - {fileID: 8300000, guid: a80f78b931a6c424d93bd40c1acae708, type: 3}
+  - {fileID: 8300000, guid: f84a00f2431a99344b937e56aab790d3, type: 3}
+  failClips:
+  - {fileID: 8300000, guid: 5835aeaf313c9b241a0edd5ddb793be0, type: 3}
+  - {fileID: 8300000, guid: 0308e3f056b3ffb44b7fb8a97d6566b1, type: 3}
+  - {fileID: 8300000, guid: 1e82ae9f19a265043a4e68728f86e04a, type: 3}
+  - {fileID: 8300000, guid: db2961a7d1c69d743b9eb2ee76cce862, type: 3}
+  - {fileID: 8300000, guid: 507b658ac416edd40a2b9322c4dfb969, type: 3}
+  idEnigme: 0
 --- !u!4 &416343071
 Transform:
   m_ObjectHideFlags: 0

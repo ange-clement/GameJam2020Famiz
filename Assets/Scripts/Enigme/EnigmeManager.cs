@@ -9,7 +9,8 @@ public class EnigmeManager : MonoBehaviour
     public string nextScene;
 
     public AudioSource VFXSource;
-    public AudioClip[] feedBackClips;
+    public AudioClip[] successClips;
+    public AudioClip[] failClips;
 
     public int idEnigme = 0;
 
@@ -53,8 +54,14 @@ public class EnigmeManager : MonoBehaviour
             End();
         }
 
-        VFXSource.PlayOneShot(feedBackClips[status]);
+        VFXSource.PlayOneShot(successClips[status]);
         status++;
+    }
+
+    public void fail()
+    {
+        int randomIdFail = Random.Range(0, failClips.Length);
+        VFXSource.PlayOneShot(failClips[randomIdFail]);
     }
 
     void End()
