@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFixing: 0
-  FixGraphicObject1: {fileID: 0}
+  camera: {fileID: 0}
+  FixGraphicObjects1:
+  - {fileID: 0}

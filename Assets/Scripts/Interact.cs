@@ -8,7 +8,7 @@ public class Interact : MonoBehaviour
 
     private bool canMount = false;
     private Vector2 wantedPos;
-    private float mountForce = 310f;
+    private float mountForce = 320f;
     private Vector3 moutOffset = new Vector3(0, 3);
 
     private bool canFix = false;
@@ -28,6 +28,7 @@ public class Interact : MonoBehaviour
         {
             if (canFix)
             {
+                canFix = false;
                 if (idFix == 1)
                 {
                     gameManager.FixSequence1();
@@ -35,6 +36,7 @@ public class Interact : MonoBehaviour
             }
             else if(canMount)
             {
+                canMount = false;
                 Vector2 dir = (wantedPos - new Vector2(transform.position.x, transform.position.y));
                 dir.Normalize();
                 playerRb.AddForce(dir * mountForce, ForceMode2D.Impulse);
