@@ -6,9 +6,6 @@ public class Interact : MonoBehaviour
 {
     public GameManager gameManager;
 
-    public AudioSource VFXSource;
-    public AudioClip[] feedBackClips;
-
     private bool canMount = false;
     private Vector2 wantedPos;
     private float mountForce = 350f;

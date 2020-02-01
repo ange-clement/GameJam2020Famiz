@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource walkSource;
     public AudioClip[] walkSounds;
+    public AudioSource foleySource;
+    public AudioClip[] foleySounds;
     private bool playWalkSound = false;
     private float playTime = .5f;
     private float playTimer = 0f;
@@ -83,10 +85,18 @@ public class PlayerController : MonoBehaviour
         {
             playTimer = Time.time;
 
-            int randomClipId = Random.Range(0, walkSounds.Length);
-            walkSource.clip = walkSounds[randomClipId];
+            int randomWalkClipId = Random.Range(0, walkSounds.Length);
+            walkSource.clip = walkSounds[randomWalkClipId];
+            int randomFoleyClipId = Random.Range(0, foleySounds.Length);
+            foleySource.clip = foleySounds[randomFoleyClipId];
 
-            walkSource.Play();
+            PlayWalk();
         }
+    }
+
+    void PlayWalk()
+    {
+        walkSource.Play();
+        foleySource.Play();
     }
 }
