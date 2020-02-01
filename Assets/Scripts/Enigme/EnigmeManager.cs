@@ -14,6 +14,8 @@ public class EnigmeManager : MonoBehaviour
 
     public int idEnigme = 0;
 
+    public float endTime = 2f;
+
     private int status = 0;
 
     public void next()
@@ -51,7 +53,7 @@ public class EnigmeManager : MonoBehaviour
         }
         else
         {
-            End();
+            StartCoroutine(End());
         }
 
         VFXSource.PlayOneShot(successClips[status]);
@@ -64,8 +66,9 @@ public class EnigmeManager : MonoBehaviour
         VFXSource.PlayOneShot(failClips[randomIdFail]);
     }
 
-    void End()
+    IEnumerator End()
     {
+        yield return new WaitForSeconds(endTime);
         SceneManager.LoadScene(nextScene);
     }
 }
