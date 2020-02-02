@@ -547,6 +547,16 @@ PrefabInstance:
       propertyPath: continueButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152908072, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: fadeDuration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152909832, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: instantComplete
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7618302573158898864, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
       propertyPath: m_Name
