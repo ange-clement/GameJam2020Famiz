@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            //FIXED PLAYER WHEN NOUNOURS
             if (walkSource.isPlaying)
             {
                 walkSource.Stop();
@@ -102,6 +103,12 @@ public class PlayerController : MonoBehaviour
             if (walkParticle.isPlaying)
             {
                 walkParticle.Stop();
+            }
+            if (animator.GetBool("mooving_b"))
+            {
+                animator.SetBool("mooving_b", false);
+                lookRight = true;
+                sprite.flipX = false;
             }
         }
 
@@ -122,5 +129,15 @@ public class PlayerController : MonoBehaviour
     {
         walkSource.Play();
         foleySource.Play();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fixable"))
+        {
+            playerRb.velocity = Vector2.zero;
+
+            gameManager.isFixing = true;
+        }
     }
 }
