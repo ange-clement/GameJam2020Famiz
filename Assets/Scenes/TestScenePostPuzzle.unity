@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1506368150}
+  selectedFlowchart: {fileID: 1769758769}
 --- !u!4 &601142728
 Transform:
   m_ObjectHideFlags: 1
@@ -2695,7 +2695,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1506368152}
   selectedCommands:
-  - {fileID: 1506368153}
+  - {fileID: 1506368154}
   variables: []
   description: 
   stepPause: 0
@@ -2748,8 +2748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.03093
-    y: 85
+    x: 65.96907
+    y: 86.03093
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2792,7 +2792,7 @@ MonoBehaviour:
   voiceOverClip: {fileID: 0}
   showAlways: 0
   showCount: 1
-  extendPrevious: 0
+  extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
   stopVoiceover: 1
@@ -2846,7 +2846,7 @@ MonoBehaviour:
   voiceOverClip: {fileID: 0}
   showAlways: 0
   showCount: 1
-  extendPrevious: 0
+  extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
   stopVoiceover: 1
@@ -2900,7 +2900,7 @@ MonoBehaviour:
   voiceOverClip: {fileID: 0}
   showAlways: 0
   showCount: 1
-  extendPrevious: 0
+  extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
   stopVoiceover: 1
@@ -2954,7 +2954,7 @@ MonoBehaviour:
   voiceOverClip: {fileID: 0}
   showAlways: 0
   showCount: 1
-  extendPrevious: 0
+  extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
   stopVoiceover: 1
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   voiceOverClip: {fileID: 0}
   showAlways: 0
   showCount: 1
-  extendPrevious: 0
+  extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
   stopVoiceover: 1
@@ -3114,11 +3114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -131.38884, y: -80.07627}
+  scrollPos: {x: -126.564095, y: -76.24122}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 402
-  zoom: 1
+  zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3128,7 +3128,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1512659993}
   selectedCommands:
-  - {fileID: 1512659992}
+  - {fileID: 1512660000}
   variables: []
   description: 
   stepPause: 0
@@ -3154,7 +3154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: '{s=20}"And still, I don''t think I''m done yet."{/s}'
+  storyText: '{s=20}"And yet, I don''t think I''m done."{/s}'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3726,8 +3726,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1769758771}
-  selectedCommands:
-  - {fileID: 1769758772}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -4601,6 +4600,11 @@ PrefabInstance:
     - target: {fileID: 7618302573152909832, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
       propertyPath: instantComplete
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152915056, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: cancelEnabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7618302573158898864, guid: 228ff9fb5f607104eb513b6d84a72b55,
