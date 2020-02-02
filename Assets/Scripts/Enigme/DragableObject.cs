@@ -6,7 +6,7 @@ public class DragableObject : MonoBehaviour
 {
     public Collider2D targetCollider;
     [HideInInspector] public bool isDragable = true;
-    public float helperTime = 3f;
+    private float helperTime = 6f;
     public GameObject[] helpers;
 
     private Vector3 initPos;
