@@ -242,7 +242,7 @@ MonoBehaviour:
   - {fileID: 924430443}
   - {fileID: 50057969}
   - {fileID: 1943033702182707470}
-  nextScene: Credit
+  nextScene: Souvenir
   VFXSource: {fileID: 416343072}
   successClips:
   - {fileID: 8300000, guid: 157e4e3ea00ca0144be544896bf71cad, type: 3}
