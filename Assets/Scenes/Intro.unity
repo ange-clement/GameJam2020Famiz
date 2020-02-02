@@ -252,7 +252,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 853529576}
   selectedCommands:
-  - {fileID: 853529585}
+  - {fileID: 853529580}
   variables: []
   description: 
   stepPause: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: fb6c64063b3d9a4469299997d627ae1a, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: f970f57a0254b95478297a2ccc6c4968, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 1
@@ -447,7 +447,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: fb6c64063b3d9a4469299997d627ae1a, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 9c3c1546d75983b4fa775f96aed17028, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 1
