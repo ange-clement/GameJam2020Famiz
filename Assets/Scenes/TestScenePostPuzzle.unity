@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1512659991}
+  selectedFlowchart: {fileID: 1769758769}
 --- !u!4 &601142728
 Transform:
   m_ObjectHideFlags: 1
@@ -3760,7 +3760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 202.48273
+    x: 203.48273
     y: 185.49817
     width: 120
     height: 40
