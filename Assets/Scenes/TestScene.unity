@@ -2935,11 +2935,6 @@ PrefabInstance:
       propertyPath: FixGraphicObjects1.Array.data[2]
       value: 
       objectReference: {fileID: 1883392285}
-    - target: {fileID: 1814755354184210111, guid: eeab12f40876b5a41af4e3f954c893ae,
-        type: 3}
-      propertyPath: enigmeScene1
-      value: EnigmeTest
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeab12f40876b5a41af4e3f954c893ae, type: 3}
 --- !u!1001 &2229315053725759638
