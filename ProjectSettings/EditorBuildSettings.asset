@@ -18,9 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/EnigmeTest.unity
     guid: e9c30962cd05c5046ad697acd989c7a8
   - enabled: 1
-    path: Assets/Scenes/Credit.unity
-    guid: 40e9cf92b8aa2c94aad1f6c2b81f4eea
+    path: Assets/Scenes/TestScenePostNounours.unity
+    guid: 68b46339951c1e840a8dc9d70a66c7d7
   - enabled: 1
     path: Assets/Scenes/EnigmeTest2.unity
     guid: 04a99312564804645ac307db3471109a
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 40e9cf92b8aa2c94aad1f6c2b81f4eea
   m_configObjects: {}
