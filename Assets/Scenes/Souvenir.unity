@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1824470269}
+  selectedFlowchart: {fileID: 1192891597}
 --- !u!4 &847721099
 Transform:
   m_ObjectHideFlags: 1
@@ -393,6 +393,7 @@ GameObject:
   - component: {fileID: 1192891601}
   - component: {fileID: 1192891598}
   - component: {fileID: 1192891607}
+  - component: {fileID: 1192891608}
   m_Layer: 0
   m_Name: SouvenirText1
   m_TagString: Untagged
@@ -427,7 +428,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1192891599}
   selectedCommands:
-  - {fileID: 1192891598}
+  - {fileID: 1192891602}
   variables: []
   description: 
   stepPause: 0
@@ -492,6 +493,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1192891603}
   commandList:
   - {fileID: 1192891607}
+  - {fileID: 1192891608}
   - {fileID: 1192891602}
   - {fileID: 1192891601}
   - {fileID: 1192891600}
@@ -702,7 +704,24 @@ MonoBehaviour:
   musicClip: {fileID: 8300000, guid: 60be4c506460df14d808d7ca8e25e083, type: 3}
   atTime: 0
   loop: 1
-  fadeDuration: 1
+  fadeDuration: 0
+--- !u!114 &1192891608
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192891596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  volume: 0.35
+  fadeDuration: 0
+  waitUntilFinished: 1
 --- !u!1001 &1225875076
 PrefabInstance:
   m_ObjectHideFlags: 0
