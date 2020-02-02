@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 1.0824728, y: 0.030927777}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -254,7 +254,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 853529576}
   selectedCommands:
-  - {fileID: 853529586}
+  - {fileID: 853529583}
   variables: []
   description: 
   stepPause: 0
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853529573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
@@ -460,21 +460,21 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529586
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853529573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 9
+  itemId: 10
   indentLevel: 0
-  volume: 0.07
-  fadeDuration: 0
-  waitUntilFinished: 1
+  soundClip: {fileID: 8300000, guid: 670fc489f1677324ba9b34529d1b9860, type: 3}
+  volume: 0.301
+  loop: 1
 --- !u!1 &1076881609
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +593,7 @@ PrefabInstance:
     - target: {fileID: 7618302573164425772, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7618302573178608144, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
