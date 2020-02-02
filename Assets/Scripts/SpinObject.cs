@@ -10,6 +10,9 @@ public class SpinObject : MonoBehaviour
     public float helperTime = 3f;
     public GameObject helper;
 
+    public AudioSource vfxSource;
+    public AudioClip[] clips;
+
     private Rigidbody2D objectRb;
     private EnigmeManager enigmeManager;
     private BoxCollider2D collider;
@@ -18,6 +21,8 @@ public class SpinObject : MonoBehaviour
     private bool followCursor = false;
     private float initProgress = 0f;
     private float progress = 0f;
+
+    private int soundState;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +59,13 @@ public class SpinObject : MonoBehaviour
 
             progress = initProgress + plannedPos.x / length;
             transform.rotation = Quaternion.Euler(0, 0, progress * angle);
+
+            if ((soundState == 0 && Mathf.Abs(progress) >= .25f) || (soundState == 1 && Mathf.Abs(progress) >= .50f) || (soundState == 2 && Mathf.Abs(progress) >= .75f))
+            {
+                int randomId = Random.Range(0, clips.Length);
+                vfxSource.PlayOneShot(clips[randomId]);
+                soundState++;
+            }
 
             if (Mathf.Abs(progress) >= 1f)
             {

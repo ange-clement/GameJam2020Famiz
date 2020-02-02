@@ -10,6 +10,10 @@ public class PorteEnigme : MonoBehaviour
     public GameObject[] helpers;
     public bool inverted = false;
 
+    public AudioSource vfxSource;
+    public AudioClip openClip;
+    public AudioClip closeClip;
+
     private Vector3 initPos;
     private Rigidbody2D objectRb;
     private EnigmeManager enigmeManager;
@@ -82,16 +86,20 @@ public class PorteEnigme : MonoBehaviour
             {
                 followCursor = true;
 
+                vfxSource.PlayOneShot(openClip);
+
                 DisableHelpers();
             }
             else
             {
                 followCursor = false;
+                vfxSource.PlayOneShot(closeClip);
 
                 if (objectRb.IsTouching(targetCollider))
                 {
                     helpers[0].SetActive(false);
                     helpers[1].SetActive(false);
+
                     enigmeManager.next();
                 }
                 else
