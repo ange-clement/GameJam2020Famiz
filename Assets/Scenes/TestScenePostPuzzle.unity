@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1769758769}
+  selectedFlowchart: {fileID: 1506368150}
 --- !u!4 &601142728
 Transform:
   m_ObjectHideFlags: 1
@@ -2694,8 +2694,7 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 1506368152}
-  selectedCommands:
-  - {fileID: 1506368154}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3073,7 +3072,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Credit
+    stringVal: EnigmeTest2
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!1 &1512659990
