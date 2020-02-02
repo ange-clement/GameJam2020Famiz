@@ -232,6 +232,7 @@ MonoBehaviour:
   helpers:
   - {fileID: 391890504003320213}
   - {fileID: 478552594782341690}
+  inverted: 0
 --- !u!1 &951779451122391232
 GameObject:
   m_ObjectHideFlags: 0
