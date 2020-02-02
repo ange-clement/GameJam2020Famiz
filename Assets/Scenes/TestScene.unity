@@ -153,8 +153,7 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 7878706}
-  selectedCommands:
-  - {fileID: 7878711}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -326,7 +325,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &7878712
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -353,7 +352,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &7878713
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -380,7 +379,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &7878714
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1161,7 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1506368150}
+  selectedFlowchart: {fileID: 7878705}
 --- !u!4 &601142728
 Transform:
   m_ObjectHideFlags: 1
