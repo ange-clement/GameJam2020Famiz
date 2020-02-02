@@ -153,7 +153,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 7878706}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 7878711}
   variables: []
   description: 
   stepPause: 0
@@ -315,7 +316,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 1
@@ -342,7 +343,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
@@ -369,7 +370,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
@@ -396,7 +397,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
@@ -823,7 +824,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -1466,7 +1467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770158524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.3, y: -2.92, z: -8401.367}
+  m_LocalPosition: {x: -6.41, y: -2.92, z: -8401.367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1569663832}
@@ -1491,7 +1492,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -1605,7 +1606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836524103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -2.92, z: -8401.367}
+  m_LocalPosition: {x: -2.73, y: -2.92, z: -8401.367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1569663832}
@@ -1709,7 +1710,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 836524107}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 836524111}
   variables: []
   description: 
   stepPause: 0
@@ -1816,7 +1818,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -1902,7 +1904,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
@@ -1984,7 +1986,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 892077052}
   selectedCommands:
-  - {fileID: 892077050}
+  - {fileID: 892077058}
   variables: []
   description: 
   stepPause: 0
@@ -2105,7 +2107,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -2132,7 +2134,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -2249,7 +2251,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1032558076}
   selectedCommands:
-  - {fileID: 1032558077}
+  - {fileID: 1032558078}
   variables: []
   description: 
   stepPause: 0
@@ -2280,7 +2282,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
@@ -2337,7 +2339,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -2391,7 +2393,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 0
@@ -2598,7 +2600,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039848515}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7282683154195554022, guid: 89569f61742a5574f9db95f4fcfa510c,
     type: 2}
@@ -3308,8 +3310,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1512659993}
-  selectedCommands:
-  - {fileID: 1512659992}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3397,7 +3398,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 0
@@ -3558,7 +3559,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 0
@@ -3908,7 +3909,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1769758771}
   selectedCommands:
-  - {fileID: 1769758770}
+  - {fileID: 1769758772}
   variables: []
   description: 
   stepPause: 0
@@ -3994,7 +3995,7 @@ MonoBehaviour:
   character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 1
@@ -4848,10 +4849,20 @@ PrefabInstance:
       propertyPath: continueButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152908072, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: fadeDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7618302573152908246, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152909832, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: instantComplete
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7618302573158898864, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}

@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 853529581}
   - component: {fileID: 853529583}
   - component: {fileID: 853529584}
+  - component: {fileID: 853529585}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -172,7 +173,7 @@ MonoBehaviour:
   extendPrevious: 0
   fadeWhenDone: 0
   waitForClick: 0
-  stopVoiceover: 1
+  stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &853529575
@@ -219,6 +220,7 @@ MonoBehaviour:
   - {fileID: 853529574}
   - {fileID: 853529579}
   - {fileID: 853529580}
+  - {fileID: 853529585}
   - {fileID: 853529582}
   - {fileID: 853529581}
   - {fileID: 853529584}
@@ -250,7 +252,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 853529576}
   selectedCommands:
-  - {fileID: 853529584}
+  - {fileID: 853529585}
   variables: []
   description: 
   stepPause: 0
@@ -290,7 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "{s=15}I\u2019m home. Back in Halab, in Aleppo after so many years living
+  storyText: "{s=18}I\u2019m home. Back in Halab, in Aleppo after so many years living
     abroad. After leaving it behind\u2026\r\n\n{/s}"
   description: 
   character: {fileID: 0}
@@ -301,7 +303,7 @@ MonoBehaviour:
   extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
-  stopVoiceover: 1
+  stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &853529580
@@ -318,8 +320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: "{s=17}I feel complicit.\r It has changed so much. I don\u2019t recognize
-    this place. I left when I was a little girl. Before the world was a cruel place.\n\n\r{/s}"
+  storyText: "{s=18}I feel complicit.\r It has changed so much. I don\u2019t recognize
+    this place. \n\n\r{/s}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -329,7 +331,7 @@ MonoBehaviour:
   extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
-  stopVoiceover: 1
+  stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &853529581
@@ -346,7 +348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: "{s=15}And it hurts. So much.\r I have to remember, to become whole
+  storyText: "{s=18}And it hurts. So much.\r I have to remember, to become whole
     again. \rTo feel at home again.{/s}\n"
   description: 
   character: {fileID: 0}
@@ -357,7 +359,7 @@ MonoBehaviour:
   extendPrevious: 1
   fadeWhenDone: 1
   waitForClick: 0
-  stopVoiceover: 1
+  stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &853529582
@@ -374,7 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "{s=15}But I had to come back.\r Lately, my memories of this time in
+  storyText: "{s=18}But I had to come back.\r Lately, my memories of this time in
     my life have begun to fade away.\r It feels like I\u2019m forgetting part of
     who I am.\n\n{/s}\n"
   description: 
@@ -386,7 +388,7 @@ MonoBehaviour:
   extendPrevious: 1
   fadeWhenDone: 0
   waitForClick: 0
-  stopVoiceover: 1
+  stopVoiceover: 0
   waitForVO: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &853529583
@@ -426,6 +428,34 @@ MonoBehaviour:
     stringVal: TestScene
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &853529585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853529573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  storyText: "{s=18}I left when I was a little girl. Before the world was a cruel
+    place.\n\n\r{/s}"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: fb6c64063b3d9a4469299997d627ae1a, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 0
+  waitForVO: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &1076881609
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +550,16 @@ PrefabInstance:
         type: 3}
       propertyPath: continueButton
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152908072, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: fadeDuration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152909832, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: instantComplete
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7618302573158898864, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
