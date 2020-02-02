@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1323388392}
+  selectedFlowchart: {fileID: 1824470269}
 --- !u!4 &847721099
 Transform:
   m_ObjectHideFlags: 1
@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 1192891598}
   - component: {fileID: 1192891607}
   - component: {fileID: 1192891608}
+  - component: {fileID: 1192891609}
   m_Layer: 0
   m_Name: SouvenirText1
   m_TagString: Untagged
@@ -428,7 +429,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1192891599}
   selectedCommands:
-  - {fileID: 1192891608}
+  - {fileID: 1192891609}
   variables: []
   description: 
   stepPause: 0
@@ -494,6 +495,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1192891607}
   - {fileID: 1192891608}
+  - {fileID: 1192891609}
   - {fileID: 1192891602}
   - {fileID: 1192891601}
   - {fileID: 1192891600}
@@ -681,7 +683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192891596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.13, y: -2.92, z: 0}
+  m_LocalPosition: {x: -3.89, y: -2.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -722,6 +724,23 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: 60be4c506460df14d808d7ca8e25e083, type: 3}
   volume: 0.303
   loop: 1
+--- !u!114 &1192891609
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192891596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 3d2df175d86fe9e4eb5efc74702a7e3e, type: 3}
+  volume: 0.37
+  waitUntilFinished: 0
 --- !u!1001 &1225875076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -954,8 +973,6 @@ GameObject:
   - component: {fileID: 1323388391}
   - component: {fileID: 1323388390}
   - component: {fileID: 1323388389}
-  - component: {fileID: 1323388388}
-  - component: {fileID: 1323388387}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -963,43 +980,9 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1323388387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323388386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 36ed42312602ed74ebeadaf2624865d5, type: 3}
-  volume: 1
-  loop: 1
---- !u!114 &1323388388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323388386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 3865841bceff15b42a96b31e2b3fed76, type: 3}
-  volume: 1
-  loop: 1
 --- !u!114 &1323388389
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1011,12 +994,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 0ffc9db7a16f23c458a0c9fffcdd1cde, type: 3}
+  soundClip: {fileID: 8300000, guid: e33f96670a441c845ac16841ddf9168a, type: 3}
   volume: 1
   loop: 1
 --- !u!114 &1323388390
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1055,8 +1038,6 @@ MonoBehaviour:
   eventHandler: {fileID: 1323388390}
   commandList:
   - {fileID: 1323388389}
-  - {fileID: 1323388388}
-  - {fileID: 1323388387}
   suppressAllAutoSelections: 0
 --- !u!114 &1323388392
 MonoBehaviour:
@@ -1084,8 +1065,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1323388391}
-  selectedCommands:
-  - {fileID: 1323388389}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1323,11 +1303,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -131.38884, y: -80.07627}
+  scrollPos: {x: 546.38074, y: 97.675575}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 402
-  zoom: 1
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: -343

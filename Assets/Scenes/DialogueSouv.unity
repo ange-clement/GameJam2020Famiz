@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 853529589}
   - component: {fileID: 853529588}
   - component: {fileID: 853529587}
+  - component: {fileID: 853529591}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -194,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 853529576}
   suppressBlockAutoSelect: 0
-  waitForFrames: 1
+  waitForFrames: 120
 --- !u!114 &853529576
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -231,6 +232,7 @@ MonoBehaviour:
   - {fileID: 853529581}
   - {fileID: 853529587}
   - {fileID: 853529583}
+  - {fileID: 853529591}
   - {fileID: 853529585}
   - {fileID: 853529584}
   suppressAllAutoSelections: 0
@@ -247,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 63.82613, y: 21.77469}
+  scrollPos: {x: 48.23979, y: -24.387335}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -260,8 +262,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 853529576}
-  selectedCommands:
-  - {fileID: 853529583}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -416,7 +417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "{s=15}\"Except, perhaps, this city.\r\"{/s}{w=3}\n"
+  storyText: "{s=15}\"Except, perhaps, this city.\r\"{/s}\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -464,7 +465,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &853529586
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -491,7 +492,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529587
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -518,7 +519,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529588
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -545,7 +546,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529589
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -572,7 +573,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529590
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -585,6 +586,33 @@ MonoBehaviour:
   itemId: 11
   indentLevel: 0
   storyText: '{w=2}'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 0
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &853529591
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853529573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  storyText: '{w=3}'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
