@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Souvenir.unity
     guid: 797d0d78cf27efc4aa8623e114178067
   - enabled: 1
+    path: Assets/Scenes/DialogueSouv.unity
+    guid: 319498f585eadf1498ef26aef200e777
+  - enabled: 1
     path: Assets/Scenes/TestScenePostPuzzle.unity
     guid: bace5c0b81eb0be42ad3640125626c14
   - enabled: 1
