@@ -44,22 +44,39 @@ public class Interact : MonoBehaviour
             else if(canMount)
             {
                 canMount = false;
+
+                playerRb.velocity = Vector2.zero;
+
                 Vector2 dir = (wantedPos - new Vector2(transform.position.x, transform.position.y));
                 dir.Normalize();
-                playerRb.velocity = Vector2.zero;
+
+                float posOffset = .2f;
+                if (transform.position.x < wantedPos.x)
+                {
+                    transform.Translate(Vector3.right * -posOffset);
+                }
+                else
+                {
+                    transform.Translate(Vector3.right * posOffset);
+                }
+
                 playerRb.AddForce(dir * mountForce, ForceMode2D.Impulse);
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Mountable"))
         {
             canMount = true;
             wantedPos = collision.transform.position + moutOffset;
         }
-        else if (collision.CompareTag("Fixable"))
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Fixable"))
         {
             canFix = true;
             idFix = collision.GetComponent<FixManager>().idFix;
