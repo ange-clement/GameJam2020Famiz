@@ -6,6 +6,9 @@ public class chaiseSoundManager : MonoBehaviour
 {
     public GameObject spaceObject;
 
+    public AudioSource vfxSource;
+    public AudioClip landClip;
+
     private Rigidbody2D rb;
     private AudioSource source;
 
@@ -49,6 +52,14 @@ public class chaiseSoundManager : MonoBehaviour
         {
             imShow = false;
             spaceObject.SetActive(false);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && collision.transform.position.y > transform.position.y)
+        {
+            vfxSource.PlayOneShot(landClip);
         }
     }
 }

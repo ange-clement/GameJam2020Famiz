@@ -8,6 +8,7 @@ public class Interact : MonoBehaviour
 
     public AudioSource VFXSource;
     public AudioClip pickUpSound;
+    public AudioClip jumpSound;
 
     private bool canMount = false;
     private Vector2 wantedPos;
@@ -61,6 +62,8 @@ public class Interact : MonoBehaviour
                 }
 
                 playerRb.AddForce(dir * mountForce, ForceMode2D.Impulse);
+
+                VFXSource.PlayOneShot(jumpSound);
             }
         }
     }

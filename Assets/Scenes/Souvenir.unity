@@ -1891,11 +1891,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2611812386778249984, guid: c82a507466cd0ad45a9fa3d6ddb8ad01,
-        type: 3}
-      propertyPath: speed
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 2611812386778249987, guid: c82a507466cd0ad45a9fa3d6ddb8ad01,
         type: 3}
       propertyPath: m_Name
@@ -1956,20 +1951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2611812387759690786, guid: c82a507466cd0ad45a9fa3d6ddb8ad01,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4143425354558186046, guid: c82a507466cd0ad45a9fa3d6ddb8ad01,
         type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1749867235}
-    - target: {fileID: 4143425354558186046, guid: c82a507466cd0ad45a9fa3d6ddb8ad01,
-        type: 3}
-      propertyPath: pickUpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: dd6e0523cad716c46b9fd457a902b0b5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82a507466cd0ad45a9fa3d6ddb8ad01, type: 3}

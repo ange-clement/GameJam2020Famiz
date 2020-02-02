@@ -429,7 +429,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1400849728840244355}
   selectedCommands:
-  - {fileID: 2589712825381767231}
+  - {fileID: 766930699250219146}
   variables: []
   description: 
   stepPause: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 156.34125
-    y: 67.51066
+    y: 67.51068
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "{s=15}There you go, Halab.\r{/s}"
+  storyText: "{s=15}\"There you go, Halab.\r\"{/s}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: "{s=15}It\u2019s not much, I know.\r{/s}"
+  storyText: "{s=15}\"It\u2019s not much, I know.\"\r{/s}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: '{s=15}But I will give you more. I promise.{/s}'
+  storyText: '{s=15}"But I will give you more. I promise."{/s}'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

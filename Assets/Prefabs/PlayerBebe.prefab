@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 651d13f9bee0312468b1b21bac1c2aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 0.5
   walkSource: {fileID: 7854890516642064598}
   walkSounds:
   - {fileID: 8300000, guid: 88851dddda037bf4f9ca715947cb6269, type: 3}
@@ -133,7 +133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   VFXSource: {fileID: 4237636276677231025}
-  pickUpSound: {fileID: 8300000, guid: 535a08d7673c80c46a51640e2cec2da1, type: 3}
+  pickUpSound: {fileID: 8300000, guid: dd6e0523cad716c46b9fd457a902b0b5, type: 3}
+  jumpSound: {fileID: 8300000, guid: 6a0c85d9ac5b59348aa462e0cfc0c67f, type: 3}
+  landClip: {fileID: 8300000, guid: dca114082a3e3c744a7914b336b44697, type: 3}
 --- !u!82 &7854890516642064598
 AudioSource:
   m_ObjectHideFlags: 0
@@ -495,7 +497,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b042a5930e9bcb242bb17ed3c72f036a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
