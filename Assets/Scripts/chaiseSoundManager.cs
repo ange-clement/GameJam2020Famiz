@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class chaiseSoundManager : MonoBehaviour
 {
+    public GameObject spaceObject;
+
     private Rigidbody2D rb;
     private AudioSource source;
+
+    private float indicatorZone = 3.5f;
+    bool imShow = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +35,20 @@ public class chaiseSoundManager : MonoBehaviour
             {
                 source.Stop();
             }
+        }
+
+        if (transform.position.x > indicatorZone)
+        {
+            if (!imShow)
+            {
+                imShow = true;
+                spaceObject.SetActive(true);
+            }
+        }
+        else if (imShow)
+        {
+            imShow = false;
+            spaceObject.SetActive(false);
         }
     }
 }
