@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 853529581}
   - component: {fileID: 853529584}
   - component: {fileID: 853529583}
+  - component: {fileID: 853529585}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -220,6 +221,7 @@ MonoBehaviour:
   - {fileID: 853529582}
   - {fileID: 853529581}
   - {fileID: 853529583}
+  - {fileID: 853529585}
   - {fileID: 853529584}
   suppressAllAutoSelections: 0
 --- !u!114 &853529577
@@ -249,7 +251,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 853529576}
   selectedCommands:
-  - {fileID: 853529574}
+  - {fileID: 853529585}
   variables: []
   description: 
   stepPause: 0
@@ -404,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "{s=15}\"Except, perhaps, this city.\r\"{/s}\n"
+  storyText: "{s=15}\"Except, perhaps, this city.\r\"{/s}{w=3}\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -436,6 +438,20 @@ MonoBehaviour:
     stringVal: TestScenePostPuzzle
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &853529585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853529573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
 --- !u!1 &1076881609
 GameObject:
   m_ObjectHideFlags: 0
