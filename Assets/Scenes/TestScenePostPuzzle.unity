@@ -1647,7 +1647,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &870555165
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1660,11 +1660,11 @@ MonoBehaviour:
   itemId: 3
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 3b30fb201356e0d409a7a12bef0cc742, type: 3}
-  volume: 1
+  volume: 0.342
   loop: 1
 --- !u!114 &870555166
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1678,7 +1678,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &870555167
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &870555168
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1760,8 +1760,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 870555169}
-  selectedCommands:
-  - {fileID: 870555167}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0

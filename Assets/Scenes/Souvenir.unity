@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1824470269}
+  selectedFlowchart: {fileID: 1323388392}
 --- !u!4 &847721099
 Transform:
   m_ObjectHideFlags: 1
@@ -293,6 +293,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3248550682583092779, guid: 23f8315f6c2122e438ecce32742febd8,
+        type: 3}
+      propertyPath: vfxSource
+      value: 
+      objectReference: {fileID: 1868503945}
+    - target: {fileID: 3248550682583092779, guid: 23f8315f6c2122e438ecce32742febd8,
+        type: 3}
+      propertyPath: landClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a0c85d9ac5b59348aa462e0cfc0c67f, type: 3}
+    - target: {fileID: 3248550682583092780, guid: 23f8315f6c2122e438ecce32742febd8,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6349225195749269820, guid: 89569f61742a5574f9db95f4fcfa510c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f8315f6c2122e438ecce32742febd8, type: 3}
 --- !u!1001 &1100287214
@@ -428,8 +444,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1192891599}
-  selectedCommands:
-  - {fileID: 1192891609}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -973,6 +988,7 @@ GameObject:
   - component: {fileID: 1323388391}
   - component: {fileID: 1323388390}
   - component: {fileID: 1323388389}
+  - component: {fileID: 1323388387}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -980,6 +996,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1323388387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323388386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bce3bd679be2c94196f3f6aaeb33f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
 --- !u!114 &1323388389
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1037,6 +1067,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1323388390}
   commandList:
+  - {fileID: 1323388387}
   - {fileID: 1323388389}
   suppressAllAutoSelections: 0
 --- !u!114 &1323388392
@@ -1065,7 +1096,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1323388391}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1323388387}
   variables: []
   description: 
   stepPause: 0
@@ -1575,6 +1607,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11, y: 1}
   m_EdgeRadius: 0
+--- !u!82 &1868503945 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3248550682583092780, guid: 23f8315f6c2122e438ecce32742febd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 857370564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1886674325
 GameObject:
   m_ObjectHideFlags: 0

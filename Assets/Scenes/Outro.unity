@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 853529587}
   - component: {fileID: 853529586}
   - component: {fileID: 853529585}
+  - component: {fileID: 853529588}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -232,7 +233,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &853529574
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -297,6 +298,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 853529575}
   commandList:
+  - {fileID: 853529588}
   - {fileID: 853529574}
   - {fileID: 853529579}
   - {fileID: 853529580}
@@ -335,7 +337,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 853529576}
   selectedCommands:
-  - {fileID: 853529584}
+  - {fileID: 853529588}
   variables: []
   description: 
   stepPause: 0
@@ -363,7 +365,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &853529579
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -393,7 +395,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529580
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -420,7 +422,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529581
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -432,7 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: "{s=15}But I now know that this isn\u2019t the end.\r\n\n{/s}\n"
+  storyText: "{s=15}But I now know that this isn\u2019t the end.\r\n{/s}\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -447,7 +449,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529582
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -469,7 +471,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 646ac8a0961361340941142525497e10, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: f0942b0daef603a41aaa76bdd7447d12, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 1
@@ -480,7 +482,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529583
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -492,7 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "{s=15}Halab\u2026 You will stand tall again, you will survive\u2026\n\n{/s}\n"
+  storyText: "{s=15}Halab\u2026 You will stand tall again, you will survive\u2026{/s}\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -507,7 +509,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529584
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -526,7 +528,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &853529585
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -538,10 +540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: '{s=15}And you will carry us on.
-
-
-    {/s}
+  storyText: '{s=15}And you will carry us on.{/s}
 
 '
   description: 
@@ -558,7 +557,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529586
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -570,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: "{s=15}No\u2026 We will repair you.\r\n\n{/s}\n"
+  storyText: "{s=15}No\u2026 We will repair you.\r{/s}\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -585,7 +584,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529587
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -597,10 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: '{s=15}You will be repaired.
-
-
-    {/s}
+  storyText: '{s=15}You will be repaired.{/s}
 
 '
   description: 
@@ -615,6 +611,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &853529588
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853529573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 60be4c506460df14d808d7ca8e25e083, type: 3}
+  volume: 0.347
+  loop: 1
 --- !u!1 &1076881609
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeDuration
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152908254, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7618302573152909832, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
@@ -838,10 +856,84 @@ PrefabInstance:
     - target: {fileID: 7618302573178608150, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15.799988
+      value: 117.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573178608150, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 144.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 228ff9fb5f607104eb513b6d84a72b55, type: 3}
+--- !u!1001 &1636829187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.42941844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5617827
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5617827
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42941844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -195.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.99999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981806, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_Name
+      value: MenuParticle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a757ba06726926345af80cb51e1cb297, type: 3}
 --- !u!1 &1711179016
 GameObject:
   m_ObjectHideFlags: 1

@@ -8,12 +8,12 @@ public class ShowAlpha : MonoBehaviour
     public MoveCredit moveCredit;
     public float speed = 0.1f;
 
-    private TextMeshProUGUI titleText;
+    private SpriteRenderer titleText;
     private float currentAlpha = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        titleText = GetComponent<TextMeshProUGUI>();
+        titleText = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class ShowAlpha : MonoBehaviour
             if (currentAlpha < 1f)
             {
                 currentAlpha += speed * Time.deltaTime;
-                titleText.alpha = currentAlpha;
+                titleText.color = new Color(titleText.color.r, titleText.color.g, titleText.color.b, currentAlpha);
             }
             else
             {

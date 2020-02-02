@@ -121,6 +121,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &548069113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.42941844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5617827
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5617827
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42941844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -195.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.99999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981805, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376390925126981806, guid: a757ba06726926345af80cb51e1cb297,
+        type: 3}
+      propertyPath: m_Name
+      value: MenuParticle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a757ba06726926345af80cb51e1cb297, type: 3}
 --- !u!1 &853529573
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,10 +207,10 @@ GameObject:
   - component: {fileID: 853529580}
   - component: {fileID: 853529582}
   - component: {fileID: 853529581}
-  - component: {fileID: 853529583}
   - component: {fileID: 853529584}
   - component: {fileID: 853529585}
   - component: {fileID: 853529586}
+  - component: {fileID: 853529583}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -254,7 +323,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 853529576}
   selectedCommands:
-  - {fileID: 853529583}
+  - {fileID: 853529574}
   variables: []
   description: 
   stepPause: 0
@@ -400,17 +469,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853529573}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 6
+  itemId: 11
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 670fc489f1677324ba9b34529d1b9860, type: 3}
-  atTime: 0
-  loop: 1
-  fadeDuration: 1
 --- !u!114 &853529584
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -460,7 +525,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &853529586
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -574,6 +639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeDuration
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7618302573152908254, guid: 228ff9fb5f607104eb513b6d84a72b55,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7618302573152909832, guid: 228ff9fb5f607104eb513b6d84a72b55,
         type: 3}
