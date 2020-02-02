@@ -16,6 +16,9 @@ public class EnigmeManager : MonoBehaviour
 
     public float endTime = 2f;
 
+    public SpriteRenderer[] objectsToChange;
+    public Sprite[] correspondinNewSprites;
+
     private int status = 0;
 
     public void next()
@@ -49,6 +52,11 @@ public class EnigmeManager : MonoBehaviour
             if (idEnigme == 1 && status == 1)
             {
                 enigmes[0].SetActive(false);
+                enigmes[1].SetActive(false);
+                for (int i = 0; i < objectsToChange.Length; i++)
+                {
+                    objectsToChange[i].sprite = correspondinNewSprites[i];
+                }
             }
         }
         else
