@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 218973463}
   - component: {fileID: 218973464}
   - component: {fileID: 218973462}
+  - component: {fileID: 218973465}
   m_Layer: 0
   m_Name: 1stBuildingText
   m_TagString: Untagged
@@ -587,11 +588,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "{s=20}\"These buildings. I\u2019m getting closer, I can feel it.\"{/s}{w=2}"
+  storyText: "{s=20}\"These buildings. I\u2019m getting closer, I can feel it.\"{/s}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
   showAlways: 0
   showCount: 1
   extendPrevious: 0
@@ -626,6 +627,7 @@ MonoBehaviour:
   eventHandler: {fileID: 218973464}
   commandList:
   - {fileID: 218973462}
+  - {fileID: 218973465}
   suppressAllAutoSelections: 0
 --- !u!114 &218973464
 MonoBehaviour:
@@ -644,6 +646,33 @@ MonoBehaviour:
   tagFilter:
   - Player
   FireOn: 1
+--- !u!114 &218973465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218973457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: '{w=2}'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &252779800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1072,6 +1101,7 @@ GameObject:
   - component: {fileID: 770158527}
   - component: {fileID: 770158528}
   - component: {fileID: 770158526}
+  - component: {fileID: 770158532}
   m_Layer: 0
   m_Name: 2ndBuildingText
   m_TagString: Untagged
@@ -1132,7 +1162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: '{s=20}"I remember this mosque. Waking up to the sound of the Adhan."{/s}{w=2}'
+  storyText: '{s=20}"I remember this mosque. Waking up to the sound of the Adhan."{/s}'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1159,7 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 200.48273
+    x: 201.48273
     y: 185.49817
     width: 120
     height: 40
@@ -1171,6 +1201,7 @@ MonoBehaviour:
   eventHandler: {fileID: 770158528}
   commandList:
   - {fileID: 770158526}
+  - {fileID: 770158532}
   suppressAllAutoSelections: 0
 --- !u!114 &770158528
 MonoBehaviour:
@@ -1279,6 +1310,33 @@ Transform:
   m_Father: {fileID: 1569663832}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770158532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770158524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: '{w=2}'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &836524103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1352,7 @@ GameObject:
   - component: {fileID: 836524107}
   - component: {fileID: 836524106}
   - component: {fileID: 836524105}
+  - component: {fileID: 836524111}
   m_Layer: 0
   m_Name: 3rdBuildingText
   m_TagString: Untagged
@@ -1329,11 +1388,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: '{s=20}"Am I standing on the leftovers of my childhood..."{/s}{w=2}'
+  storyText: '{s=20}"Am I standing on the leftovers of my childhood..."{/s}'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
   showAlways: 0
   showCount: 1
   extendPrevious: 0
@@ -1385,6 +1444,7 @@ MonoBehaviour:
   eventHandler: {fileID: 836524106}
   commandList:
   - {fileID: 836524105}
+  - {fileID: 836524111}
   suppressAllAutoSelections: 0
 --- !u!114 &836524108
 MonoBehaviour:
@@ -1501,6 +1561,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &836524111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836524103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: '{w=2}'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!4 &870646128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2229315052665796163, guid: 460fcb69379e4be4294953681d1f5401,
@@ -1523,6 +1610,8 @@ GameObject:
   - component: {fileID: 892077051}
   - component: {fileID: 892077050}
   - component: {fileID: 892077049}
+  - component: {fileID: 892077057}
+  - component: {fileID: 892077058}
   m_Layer: 0
   m_Name: 0BuildingText
   m_TagString: Untagged
@@ -1544,11 +1633,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "{s=20}\"Maybe if I look around\u2026I\u2019ll find something\u2026\"{/s}{w=2}"
+  storyText: "{s=20}\"Maybe if I look around\u2026I\u2019ll find something\u2026\"{/s}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
   showAlways: 0
   showCount: 1
   extendPrevious: 0
@@ -1571,12 +1660,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "{s=20}\"I thought just being here would take me back, but it really
-    \nis all gone...\r\"{/s}{w=2}"
+  storyText: "{s=15}\"I thought just being here would take me back, but it really
+    \nis all gone...\r\"{/s}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 8360a28a2984e94429b1cf43e4a2231d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1628,7 +1717,9 @@ MonoBehaviour:
   eventHandler: {fileID: 892077051}
   commandList:
   - {fileID: 892077050}
+  - {fileID: 892077057}
   - {fileID: 892077049}
+  - {fileID: 892077058}
   suppressAllAutoSelections: 0
 --- !u!114 &892077053
 MonoBehaviour:
@@ -1656,7 +1747,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 892077052}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 892077057}
   variables: []
   description: 
   stepPause: 0
@@ -1758,6 +1850,60 @@ Transform:
   m_Father: {fileID: 1569663832}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &892077057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892077048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  storyText: '{w=2}'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &892077058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892077048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: '{w=2}'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &953379355
 GameObject:
   m_ObjectHideFlags: 0
