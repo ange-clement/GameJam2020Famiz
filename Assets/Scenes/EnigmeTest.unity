@@ -256,6 +256,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 507b658ac416edd40a2b9322c4dfb969, type: 3}
   idEnigme: 0
   endTime: 2
+  objectsToChange: []
+  correspondinNewSprites: []
 --- !u!4 &416343071
 Transform:
   m_ObjectHideFlags: 0
@@ -861,6 +863,7 @@ GameObject:
   - component: {fileID: 1970783569}
   - component: {fileID: 1970783568}
   - component: {fileID: 1970783567}
+  - component: {fileID: 1970783572}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -927,6 +930,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1970783568}
   commandList:
   - {fileID: 1970783567}
+  - {fileID: 1970783572}
   suppressAllAutoSelections: 0
 --- !u!114 &1970783570
 MonoBehaviour:
@@ -955,7 +959,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1970783569}
   selectedCommands:
-  - {fileID: 1970783567}
+  - {fileID: 1970783572}
   variables: []
   description: 
   stepPause: 0
@@ -981,6 +985,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970783572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970783566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 3b30fb201356e0d409a7a12bef0cc742, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 0
 --- !u!1 &1943033702182707470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3324330724395053217, guid: 6c6a402bf8e78674e80621a66b4c7132,
