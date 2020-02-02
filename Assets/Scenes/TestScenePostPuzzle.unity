@@ -2500,7 +2500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 870646128}
-  smoothTime: 0.3
+  smoothTime: 1
   leftBoundary: -12
   rightBoundary: 12
 --- !u!1001 &1170749069
