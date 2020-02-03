@@ -156,9 +156,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -1647}
+  m_AnchoredPosition: {x: 0, y: -1569}
   m_SizeDelta: {x: 0, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &462091800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -29.253174, z: 275.85547, w: 0}
+  m_margin: {x: 0, y: -29.253174, z: 0.25268555, w: 0}
   m_textInfo:
     textComponent: {fileID: 462091800}
     characterCount: 732
@@ -260,7 +260,7 @@ MonoBehaviour:
     spaceCount: 137
     wordCount: 93
     linkCount: 0
-    lineCount: 68
+    lineCount: 66
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  endHeight: 2200
+  endHeight: 2300
   isFinished: 0
 --- !u!1 &655624223
 GameObject:
@@ -746,6 +746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1651709818}
   - component: {fileID: 1651709819}
+  - component: {fileID: 1651709820}
   m_Layer: 0
   m_Name: nour_credit
   m_TagString: Untagged
@@ -761,11 +762,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651709817}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -534.81, y: -360, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 1904296675}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1651709819
 SpriteRenderer:
@@ -807,7 +808,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 207667f688b36f74ab7ee5ee6daae746, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -817,6 +818,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1651709820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651709817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd97819a4c15e44583451112558115e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveCredit: {fileID: 462091802}
+  speed: 0.1
 --- !u!1 &1904296671
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,7 +923,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 462091799}
-  - {fileID: 1651709818}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
